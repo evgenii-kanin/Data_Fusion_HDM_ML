@@ -1,0 +1,136 @@
+################################################################################
+|                                                                              |
+|                              MUFITS SIMULATOR                                |
+|                  COPYRIGHT (C) 2013-2022 ANDREY AFANASYEV                    |
+|                                                                              |
+|------------------------------------------------------------------------------|
+|                                                                              |
+|                            U-SIMULATION LOG FILE                             |
+|                                                                              |
+|--------------------------- EXECUTION INFORMATION ----------------------------|
+|   RELEASE: 2022.A09     RUN FILE: MODEL_MASS_CALC.RUN                        |
+| PROCESSES: 1            RUN DATE: 04.12.2022                                 |
+|                         RUN TIME: 13:02:24                                   |
+--------------------------------------------------------------------------------
+| MSG: KEYWORD PARALLEL                                                        |
+|      THE MAXIMUM NUMBER OF THREADS SET TO: 10                                |
+| MSG: KEYWORD TEMPLATE                                                        |
+|      THE TEMPLATE FILE IS <../MODEL.TEMPLATE>                                |
+|      LOADING TEMPLATE FROM <../MODEL.TEMPLATE>                               |
+|      WORKING DIRECTORY IS <../MODEL>                                         |
+|      RUN-FILE IS <MODEL.RUN>                                                 |
+|      LOG-FILE IS <MODEL.LOG>                                                 |
+|      OBJ-FILE IS <MODEL.OBJ>                                                 |
+|      WORKFILE IS <MODEL.WORKFILE>                                            |
+|      REPORT FILE IS <OPTIM.MODEL.RPT>                                        |
+|      BESTFIT FILE IS <MODEL.BESTFIT>                                         |
+|      STUDY FILE IS <STUDY.MODEL.RPT>                                         |
+| MSG: KEYWORD WORKDIR                                                         |
+|      WORKING DIRECTORY IS <../WORKDIR>                                       |
+| MSG: KEYWORD EXECCMD                                                         |
+|      EXECUTION COMMAND SET TO <"C:\Program Files\MPICH2\bin\mpiexec.exe" -n  |
+|      1 C:\Users\kanal\Documents\MUFITS\BIN\H64.EXE>                          |
+| MSG: KEYWORD DECLARE                                                         |
+|      READING DECLARATION <$D#NUM>                                            |
+| MSG: KEYWORD SEARCH                                                          |
+|      ----------------------------------------------------------------------- |
+|      ----------------------------------------------------------------------- |
+|      SAVING CONVERTED TEMPLATE TO <../WORKDIR-THREAD1/MODEL.RUN>             |
+|      EXECUTING <"C:\Program Files\MPICH2\bin\mpiexec.exe" -n 1 C:\Users\kana |
+|      l\Documents\MUFITS\BIN\H64.EXE ../WORKDIR-THREAD1/MODEL.RUN >../WORKDIR |
+|      -THREAD1/MODEL.LOG RUNID(ID1) WORKFILE(MODEL.WORKFILE,1)>               |
+|      ----------------------------------------------------------------------- |
+|      ----------------------------------------------------------------------- |
+|      SAVING CONVERTED TEMPLATE TO <../WORKDIR-THREAD2/MODEL.RUN>             |
+|      EXECUTING <"C:\Program Files\MPICH2\bin\mpiexec.exe" -n 1 C:\Users\kana |
+|      l\Documents\MUFITS\BIN\H64.EXE ../WORKDIR-THREAD2/MODEL.RUN >../WORKDIR |
+|      -THREAD2/MODEL.LOG RUNID(ID2) WORKFILE(MODEL.WORKFILE,2)>               |
+|      ----------------------------------------------------------------------- |
+|      ----------------------------------------------------------------------- |
+|      SAVING CONVERTED TEMPLATE TO <../WORKDIR-THREAD3/MODEL.RUN>             |
+|      EXECUTING <"C:\Program Files\MPICH2\bin\mpiexec.exe" -n 1 C:\Users\kana |
+|      l\Documents\MUFITS\BIN\H64.EXE ../WORKDIR-THREAD3/MODEL.RUN >../WORKDIR |
+|      -THREAD3/MODEL.LOG RUNID(ID3) WORKFILE(MODEL.WORKFILE,3)>               |
+|      ----------------------------------------------------------------------- |
+|      ----------------------------------------------------------------------- |
+|      SAVING CONVERTED TEMPLATE TO <../WORKDIR-THREAD4/MODEL.RUN>             |
+|      EXECUTING <"C:\Program Files\MPICH2\bin\mpiexec.exe" -n 1 C:\Users\kana |
+|      l\Documents\MUFITS\BIN\H64.EXE ../WORKDIR-THREAD4/MODEL.RUN >../WORKDIR |
+|      -THREAD4/MODEL.LOG RUNID(ID4) WORKFILE(MODEL.WORKFILE,4)>               |
+|      ----------------------------------------------------------------------- |
+|      ----------------------------------------------------------------------- |
+|      SAVING CONVERTED TEMPLATE TO <../WORKDIR-THREAD5/MODEL.RUN>             |
+|      EXECUTING <"C:\Program Files\MPICH2\bin\mpiexec.exe" -n 1 C:\Users\kana |
+|      l\Documents\MUFITS\BIN\H64.EXE ../WORKDIR-THREAD5/MODEL.RUN >../WORKDIR |
+|      -THREAD5/MODEL.LOG RUNID(ID5) WORKFILE(MODEL.WORKFILE,5)>               |
+|      ----------------------------------------------------------------------- |
+|      ----------------------------------------------------------------------- |
+|      SAVING CONVERTED TEMPLATE TO <../WORKDIR-THREAD6/MODEL.RUN>             |
+|      EXECUTING <"C:\Program Files\MPICH2\bin\mpiexec.exe" -n 1 C:\Users\kana |
+|      l\Documents\MUFITS\BIN\H64.EXE ../WORKDIR-THREAD6/MODEL.RUN >../WORKDIR |
+|      -THREAD6/MODEL.LOG RUNID(ID6) WORKFILE(MODEL.WORKFILE,6)>               |
+|      ----------------------------------------------------------------------- |
+|      ----------------------------------------------------------------------- |
+|      SAVING CONVERTED TEMPLATE TO <../WORKDIR-THREAD7/MODEL.RUN>             |
+|      EXECUTING <"C:\Program Files\MPICH2\bin\mpiexec.exe" -n 1 C:\Users\kana |
+|      l\Documents\MUFITS\BIN\H64.EXE ../WORKDIR-THREAD7/MODEL.RUN >../WORKDIR |
+|      -THREAD7/MODEL.LOG RUNID(ID7) WORKFILE(MODEL.WORKFILE,7)>               |
+|      ----------------------------------------------------------------------- |
+|      ----------------------------------------------------------------------- |
+|      SAVING CONVERTED TEMPLATE TO <../WORKDIR-THREAD8/MODEL.RUN>             |
+|      EXECUTING <"C:\Program Files\MPICH2\bin\mpiexec.exe" -n 1 C:\Users\kana |
+|      l\Documents\MUFITS\BIN\H64.EXE ../WORKDIR-THREAD8/MODEL.RUN >../WORKDIR |
+|      -THREAD8/MODEL.LOG RUNID(ID8) WORKFILE(MODEL.WORKFILE,8)>               |
+|      ----------------------------------------------------------------------- |
+|      ----------------------------------------------------------------------- |
+|      SAVING CONVERTED TEMPLATE TO <../WORKDIR-THREAD9/MODEL.RUN>             |
+|      EXECUTING <"C:\Program Files\MPICH2\bin\mpiexec.exe" -n 1 C:\Users\kana |
+|      l\Documents\MUFITS\BIN\H64.EXE ../WORKDIR-THREAD9/MODEL.RUN >../WORKDIR |
+|      -THREAD9/MODEL.LOG RUNID(ID9) WORKFILE(MODEL.WORKFILE,9)>               |
+|      ----------------------------------------------------------------------- |
+|      ----------------------------------------------------------------------- |
+|      SAVING CONVERTED TEMPLATE TO <../WORKDIR-THREAD0/MODEL.RUN>             |
+|      EXECUTING <"C:\Program Files\MPICH2\bin\mpiexec.exe" -n 1 C:\Users\kana |
+|      l\Documents\MUFITS\BIN\H64.EXE ../WORKDIR-THREAD0/MODEL.RUN >../WORKDIR |
+|      -THREAD0/MODEL.LOG RUNID(ID10) WORKFILE(MODEL.WORKFILE,0)>              |
+|      ----------------------------------------------------------------------- |
+|      ELAPSED TIME FOR RUNID(ID1)= 4.66 SEC                                   |
+|      ----------------------------------------------------------------------- |
+| WAR: THE <OBJFUNC> OBJECTIVE FUNCTION VALUE NOT FOUND FOR RUNID(ID1)         |
+|      ELAPSED TIME FOR RUNID(ID2)= 4.40 SEC                                   |
+|      ----------------------------------------------------------------------- |
+| WAR: THE <OBJFUNC> OBJECTIVE FUNCTION VALUE NOT FOUND FOR RUNID(ID2)         |
+|      ELAPSED TIME FOR RUNID(ID3)= 5.21 SEC                                   |
+|      ----------------------------------------------------------------------- |
+| WAR: THE <OBJFUNC> OBJECTIVE FUNCTION VALUE NOT FOUND FOR RUNID(ID3)         |
+|      ELAPSED TIME FOR RUNID(ID4)= 4.93 SEC                                   |
+|      ----------------------------------------------------------------------- |
+| WAR: THE <OBJFUNC> OBJECTIVE FUNCTION VALUE NOT FOUND FOR RUNID(ID4)         |
+|      ELAPSED TIME FOR RUNID(ID5)= 5.68 SEC                                   |
+|      ----------------------------------------------------------------------- |
+| WAR: THE <OBJFUNC> OBJECTIVE FUNCTION VALUE NOT FOUND FOR RUNID(ID5)         |
+|      ELAPSED TIME FOR RUNID(ID6)= 5.39 SEC                                   |
+|      ----------------------------------------------------------------------- |
+| WAR: THE <OBJFUNC> OBJECTIVE FUNCTION VALUE NOT FOUND FOR RUNID(ID6)         |
+|      ELAPSED TIME FOR RUNID(ID7)= 5.00 SEC                                   |
+|      ----------------------------------------------------------------------- |
+| WAR: THE <OBJFUNC> OBJECTIVE FUNCTION VALUE NOT FOUND FOR RUNID(ID7)         |
+|      ELAPSED TIME FOR RUNID(ID10)= 4.23 SEC                                  |
+|      ----------------------------------------------------------------------- |
+| WAR: THE <OBJFUNC> OBJECTIVE FUNCTION VALUE NOT FOUND FOR RUNID(ID10)        |
+|      ELAPSED TIME FOR RUNID(ID8)= 5.40 SEC                                   |
+|      ----------------------------------------------------------------------- |
+| WAR: THE <OBJFUNC> OBJECTIVE FUNCTION VALUE NOT FOUND FOR RUNID(ID8)         |
+|      ELAPSED TIME FOR RUNID(ID9)= 4.88 SEC                                   |
+|      ----------------------------------------------------------------------- |
+| WAR: THE <OBJFUNC> OBJECTIVE FUNCTION VALUE NOT FOUND FOR RUNID(ID9)         |
+| MSG: ALL DECLARATIONS ARE SET TO BEST-FIT VALUES                             |
+---------------------------- EXECUTION INFORMATION -----------------------------
+|          CURRENT DATE:  04.12.2022             MESSAGES: 7                   |
+|          CURRENT TIME:  13:02:32               WARNINGS: 10                  |
+|          ELAPSED TIME:  00:00:08.166             ERRORS: 0                   |
+|------------------------------------------------------------------------------|
+|                                                                              |
+|                           U-SIMULATION SUCCEEDED                             |
+|                                                                              |
+################################################################################

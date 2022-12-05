@@ -1,0 +1,5 @@
+<VTKFile type="Collection" version="0.1" byte_order="BigEndian">
+  <Collection>
+     <DataSet group="" part="0" timestep="  0.0000000E+00" file="MODEL.0000.vtu"/>
+  </Collection>
+</VTKFile> 

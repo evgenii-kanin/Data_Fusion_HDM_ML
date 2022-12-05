@@ -1,0 +1,32 @@
+OPTIM 
+
+PARALLEL                                
+	10 /                                   
+
+TEMPLATE                               
+   '../MODEL.TEMPLATE' /        
+   
+WORKDIR                             
+  '../WORKDIR' / 
+
+
+-- paths to MPI and MUFITS simulator (H64.EXE)
+EXECCMD
+  '"C:\Program Files\MPICH2\bin\mpiexec.exe" -n 1 C:\Users\kanal\Documents\MUFITS\BIN\H64.EXE' /
+
+OPTIMOPT
+	0 9* 0 /
+  
+DECLARE	
+	$D#NUM 1 INT /	
+/
+
+-- put the number of data samples
+SEARCH
+	$D#NUM 10 1 10 /
+/
+
+ENDOPTIM  
+
+
+END    

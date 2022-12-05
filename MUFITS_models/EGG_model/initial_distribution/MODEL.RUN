@@ -1,0 +1,204 @@
+RUNSPEC  
+
+BLACKOIL  
+
+                                        
+WATER                                   
+OIL                                     
+
+METRIC    
+
+FAST                                   
+
+GRID      
+
+MAKE     
+	CART   60  60   1   /            
+          
+XYZBOUND                                     
+	0.0 2000 0.0  2000 4000 4010 /                                     
+
+INCLUDE                                 
+	'../ACTIVE.INC' /                         
+
+WELSPECS
+	INJECT1  1*  5    57  1*       4*  1*  6*   1*    /  
+	INJECT2  1*  30   53  1*       4*  1*  6*   1*    /  
+	INJECT3  1*  2    35  1*       4*  1*  6*   1*    /  
+	INJECT4  1*  27   29  1*       4*  1*  6*   1*    /  
+	INJECT5  1*  50   35  1*       4*  1*  6*   1*    /  
+	INJECT6  1*  8    9   1*       4*  1*  6*   1*    /  
+	INJECT7  1*  32   2   1*       4*  1*  6*   1*    / 
+	INJECT8  1*  57   6   1*       4*  1*  6*   1*    /  
+	PROD1    1*  16   43  1*       4*  1*  6*   1*    /  
+	PROD2    1*  35   40  1*       4*  1*  6*   1*    /
+	PROD3    1*  23   16  1*       4*  1*  6*   1*    /
+	PROD4    1*  43   18  1*       4*  1*  6*   1*    /
+/
+
+COMPDAT
+	INJECT1     2*      1     1  OPEN  2*                0.2 	/ 
+	INJECT2     2*      1     1  OPEN  2*                0.2 	/ 
+	INJECT3     2*      1     1  OPEN  2*                0.2 	/ 
+	INJECT4     2*      1     1  OPEN  2*                0.2 	/ 
+	INJECT5     2*      1     1  OPEN  2*                0.2 	/ 
+	INJECT6     2*      1     1  OPEN  2*                0.2 	/ 
+	INJECT7     2*      1     1  OPEN  2*                0.2 	/ 
+	INJECT8     2*      1     1  OPEN  2*                0.2 	/ 
+	PROD1       2*      1     1  OPEN  2*                0.2 	/ 
+	PROD2       2*      1     1  OPEN  2*                0.2 	/ 
+	PROD3       2*      1     1  OPEN  2*                0.2 	/ 
+	PROD4       2*      1     1  OPEN  2*                0.2 	/ 
+/ 
+
+DZWELL                                  
+  100 10 /                              
+
+ENDMAKE   
+
+INCLUDE                                 
+	'../mDARCY.INC' /                         
+										
+
+EQUALS                  
+    PORO      0.2      /              
+/
+
+OPERATE
+	PERMX 1* MULTIPLY 0.00409716 /
+	PERMX 1* ADD 0.659936 /
+	PERMY PERMX COPY /
+/
+
+RPTGRID      
+	I-IJKRES J-IJKRES K-IJKRES
+	XCOORD YCOORD DEPTH                          
+	PORO PERMX PERMY PERMZ 
+	ACTNUM
+/  
+
+
+PROPS     
+
+          
+ROCK      
+   /        
+
+ROCKECL                                 
+-- -refpres- --compr--                  
+     400        0     /                 
+
+ENDROCK   
+
+          
+SAT       
+   /
+   
+SWOF
+	  0.1,  0,  1  /     
+	  0.9,  1,  0  /
+/
+
+ENDSAT    
+
+RPTSATTA                                
+/                                       
+
+       
+EOS      
+   /
+
+DENSITY                                   
+	900       1000   /
+
+PVCDO                                   
+	400      1.0      1E-5    5.0  /   
+
+PVTW                                    
+	400      1.0      1E-5    1.0  /   
+                                       
+
+ENDEOS    
+
+INIT      
+
+EQL      
+   /
+
+EQUIL
+	4000     400      5000  /
+	
+ENDEQL    
+
+RPTSUM                                  
+   PRESSURE SWAT SOIL /                 
+
+RPTWELL                                 
+   WBHP WWCT WOPR WWPR WWIR /          
+
+RPTFIELD                                
+   FWCT FOPR FWPR FWIR FOPT FWIT 
+   FWPR FWPT /                
+
+SCHEDULE   
+
+	NOSIM
+
+WEEKTOL                                 
+                                        
+
+REPORTS                                 
+   NOTHING  /
+
+TUNING                                  
+  0.1 /
+
+VARS                                    
+  PRES  DMAX 30  /                      
+  PRES  MAXV 1000 /     
+/
+
+WELLINJE
+   INJECT*  OPEN BHP  1*     1*     700       10000     WATER /
+
+/
+
+WELLPROD
+     PROD*  OPEN BHP  1*      1*      350     10000 /
+/
+                                       
+
+TSTEP                                   
+	120*30 /                             
+
+TSTEP
+	120*30 /
+	
+TSTEP
+	125*30 /
+		
+POST      
+
+RPTPOST 
+	TIME TIMEY WBHP WOPR WWPR WWCT /            
+POSTWELL                                
+   'PROD*' /
+/
+
+RPTPOST 
+	TIME TIMEY WBHP WWIR /             
+POSTWELL                                
+   'INJECT*' /
+/
+
+RPTPOST 
+	NOTHING TIME TIMEY FWCT FOPR FWPR FWIR FOPT FWIT 
+	FWPR FWPT
+	/    
+POSTFLD                                 
+/
+
+CONVERT                                
+                                        
+
+END       
